@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- SEO Meta Tags for search engine optimization -->
+    <meta name="description" content="Comprehensive learning hub for Python, C++, HTML, CSS, Java, and Squarespace. Free tutorials, interactive lessons, and downloadable cheat sheets for web developers and programmers.">
+    <meta name="keywords" content="python tutorial, c++ tutorial, html css tutorial, java programming, squarespace guide, programming cheat sheets, web development learning">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Learning Hub - Master Programming & Web Development">
+    <meta property="og:description" content="Free tutorials and resources for Python, C++, HTML, CSS, Java, and Squarespace">
+    <meta property="og:type" content="website">
+    <title>Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip link for screen readers and keyboard users - accessibility best practice -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with site-wide navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">Swick's IT Creations</div>
+            <ul>
+                <li><a href="index.html" class="nav-link " >Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="webservices.html" class="nav-link" >Website Services</a></li>
+                <li><a href="techSupport.html" class="nav-link" >Tech Support</a></li>
+                <li><a href="learningHub.html" class="nav-link active" aria-current="page">Learning Hub</a></li>
+                <li><a href="project.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+            <!-- Learning Hub Section (formerly How-To Guides) -->
+        <section id="learning-hub" class="page-section ">
+            <h1>Learning Hub 📚</h1>
+            <p>Knowledge grows best when it's shared! Here you'll find tutorials, guides, and resources to help you on your coding journey. I'm continuously adding new content, so check back often.</p>
+            
+            <div class="tutorial-grid">
+                <article class="tutorial-card">
+                    <h3>HTML Basics</h3>
+                    <p>Learn the building blocks of the web! HTML is where every website begins.</p>
+                    <ul class="features">
+                        <li>Setting up your first page</li>
+                        <li>Understanding tags and elements</li>
+                        <li>Creating semantic markup</li>
+                        <li>Accessibility best practices</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="alert('Tutorial coming soon! Subscribe to my newsletter for updates.')">View Tutorials</button>
+                </article>
+                
+                <article class="tutorial-card">
+                    <h3>CSS Styling</h3>
+                    <p>Make your websites beautiful! Learn how to style and layout your pages.</p>
+                    <ul class="features">
+                        <li>Selectors and properties</li>
+                        <li>Flexbox and Grid layouts</li>
+                        <li>Responsive design</li>
+                        <li>Animations and transitions</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="alert('Tutorial coming soon! Subscribe to my newsletter for updates.')">View Tutorials</button>
+                </article>
+                
+                <article class="tutorial-card">
+                    <h3>C++ Programming</h3>
+                    <p>Dive into programming fundamentals with C++, a powerful and widely-used language.</p>
+                    <ul class="features">
+                        <li>Variables and data types</li>
+                        <li>Control structures</li>
+                        <li>Functions and classes</li>
+                        <li>Practical projects</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="alert('Tutorial coming soon! Subscribe to my newsletter for updates.')">View Tutorials</button>
+                </article>
+                
+                <article class="tutorial-card">
+                    <h3>Squarespace Tips</h3>
+                    <p>Get the most out of Squarespace! Tips and tricks for creating stunning sites.</p>
+                    <ul class="features">
+                        <li>Choosing the right template</li>
+                        <li>Customization techniques</li>
+                        <li>SEO optimization</li>
+                        <li>E-commerce setup</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="alert('Tutorial coming soon! Subscribe to my newsletter for updates.')">View Tutorials</button>
+                </article>
+            </div>
+        </section>
+
+           <!-- Hero section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-icon" aria-hidden="true">📚</div>
+            <h1 id="hero-heading">Learning Hub</h1>
+            <p>Master programming and web development with interactive tutorials, comprehensive guides, and downloadable cheat sheets</p>
+        </section>
+
+        <!-- Search bar for filtering -->
+        <div class="search-container">
+            <input 
+                type="search" 
+                class="search-bar" 
+                placeholder="Search tutorials, languages, or topics..." 
+                aria-label="Search tutorials"
+                id="searchInput"
+                oninput="filterContent()">
+        </div>
+
+        <!-- Programming languages section -->
+        <section aria-labelledby="languages-heading">
+            <div class="section-header">
+                <h2 id="languages-heading">Programming Languages & Tools</h2>
+                <p>Choose a language to start your learning journey</p>
+            </div>
+
+            <div class="languages-grid" id="languagesGrid">
+                
+                <!-- Python Card -->
+                <article class="language-card" data-language="python">
+                    <span class="language-icon" aria-hidden="true">🐍</span>
+                    <h3>Python</h3>
+                    <div style="text-align: center;">
+                        <span class="difficulty beginner">Beginner Friendly</span>
+                    </div>
+                    <p>Versatile, beginner-friendly language perfect for data science, web development, and automation</p>
+                    <div class="lesson-count">
+                        <span>📖</span>
+                        <span>8 Essential Lessons</span>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary" onclick="openTutorial('html')">Start Learning</button>
+                        <button class="btn btn-secondary" onclick="scrollToCheatsheet('html')">Cheat Sheet</button>
+                    </div>
+                </article>
+
+                <!-- CSS Card -->
+                <article class="language-card" data-language="css">
+                    <span class="language-icon" aria-hidden="true">🎨</span>
+                    <h3>CSS</h3>
+                    <div style="text-align: center;">
+                        <span class="difficulty beginner">Beginner Friendly</span>
+                    </div>
+                    <p>Style and design websites with beautiful layouts, animations, and responsive design</p>
+                    <div class="lesson-count">
+                        <span>📖</span>
+                        <span>10 Creative Lessons</span>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary" onclick="openTutorial('css')">Start Learning</button>
+                        <button class="btn btn-secondary" onclick="scrollToCheatsheet('css')">Cheat Sheet</button>
+                    </div>
+                </article>
+
+                <!-- Java Card -->
+                <article class="language-card" data-language="java">
+                    <span class="language-icon" aria-hidden="true">☕</span>
+                    <h3>Java</h3>
+                    <div style="text-align: center;">
+                        <span class="difficulty intermediate">Intermediate</span>
+                    </div>
+                    <p>Enterprise-level programming for Android apps, web applications, and large-scale systems</p>
+                    <div class="lesson-count">
+                        <span>📖</span>
+                        <span>14 Professional Lessons</span>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary" onclick="openTutorial('java')">Start Learning</button>
+                        <button class="btn btn-secondary" onclick="scrollToCheatsheet('java')">Cheat Sheet</button>
+                    </div>
+                </article>
+
+                <!-- Squarespace Card -->
+                <article class="language-card" data-language="squarespace">
+                    <span class="language-icon" aria-hidden="true">🏗️</span>
+                    <h3>Squarespace</h3>
+                    <div style="text-align: center;">
+                        <span class="difficulty beginner">Beginner Friendly</span>
+                    </div>
+                    <p>Build stunning websites without code using Squarespace's powerful platform</p>
+                    <div class="lesson-count">
+                        <span>📖</span>
+                        <span>9 Practical Lessons</span>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="btn btn-primary" onclick="openTutorial('squarespace')">Start Learning</button>
+                        <button class="btn btn-secondary" onclick="scrollToCheatsheet('squarespace')">Cheat Sheet</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Cheat Sheets Section -->
+        <section class="cheatsheets-section" id="cheatsheets" aria-labelledby="cheatsheets-heading">
+            <div class="section-header">
+                <h2 id="cheatsheets-heading">Quick Reference Cheat Sheets</h2>
+                <p>Download comprehensive cheat sheets for quick reference while coding</p>
+            </div>
+
+            <div class="cheatsheets-grid">
+                
+                <!-- Python Cheat Sheet -->
+                <article class="cheatsheet-card" id="cheatsheet-python">
+                    <div class="cheatsheet-icon">🐍</div>
+                    <h4>Python Cheat Sheet</h4>
+                    <p>Syntax, data types, functions, OOP, and common libraries</p>
+                    <button class="download-btn" onclick="downloadCheatsheet('python')">
+                        <span>📥</span>
+                        <span>Download PDF</span>
+                    </button>
+                </article>
+
+                <!-- C++ Cheat Sheet -->
+                <article class="cheatsheet-card" id="cheatsheet-cpp">
+                    <div class="cheatsheet-icon">⚙️</div>
+                    <h4>C++ Cheat Sheet</h4>
+                    <p>Syntax, pointers, STL, templates, and memory management</p>
+                    <button class="download-btn" onclick="downloadCheatsheet('cpp')">
+                        <span>📥</span>
+                        <span>Download PDF</span>
+                    </button>
+                </article>
+
+                <!-- HTML Cheat Sheet -->
+                <article class="cheatsheet-card" id="cheatsheet-html">
+                    <div class="cheatsheet-icon">🌐</div>
+                    <h4>HTML Cheat Sheet</h4>
+                    <p>Tags, attributes, semantic HTML, forms, and best practices</p>
+                    <button class="download-btn" onclick="downloadCheatsheet('html')">
+                        <span>📥</span>
+                        <span>Download PDF</span>
+                    </button>
+                </article>
+
+                <!-- CSS Cheat Sheet -->
+                <article class="cheatsheet-card" id="cheatsheet-css">
+                    <div class="cheatsheet-icon">🎨</div>
+                    <h4>CSS Cheat Sheet</h4>
+                    <p>Selectors, flexbox, grid, animations, and responsive design</p>
+                    <button class="download-btn" onclick="downloadCheatsheet('css')">
+                        <span>📥</span>
+                        <span>Download PDF</span>
+                    </button>
+                </article>
+
+                <!-- Java Cheat Sheet -->
+                <article class="cheatsheet-card" id="cheatsheet-java">
+                    <div class="cheatsheet-icon">☕</div>
+                    <h4>Java Cheat Sheet</h4>
+                    <p>Syntax, OOP, collections, streams, and exception handling</p>
+                    <button class="download-btn" onclick="downloadCheatsheet('java')">
+                        <span>📥</span>
+                        <span>Download PDF</span>
+                    </button>
+                </article>
+
+                <!-- Squarespace Cheat Sheet -->
+                <article class="cheatsheet-card" id="cheatsheet-squarespace">
+                    <div class="cheatsheet-icon">🏗️</div>
+                    <h4>Squarespace Cheat Sheet</h4>
+                    <p>Custom CSS, code injection, templates, and design tips</p>
+                    <button class="download-btn" onclick="downloadCheatsheet('squarespace')">
+                        <span>📥</span>
+                        <span>Download PDF</span>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Tutorial Modal -->
+    <div class="modal" id="tutorialModal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()" aria-label="Close tutorial">×</button>
+            
+            <div class="modal-header">
+                <h2 id="modal-title">Tutorial Content</h2>
+                <p id="modal-subtitle" style="color: var(--light-gold);"></p>
+            </div>
+
+            <!-- Tutorial navigation tabs -->
+            <div class="tutorial-tabs" role="tablist" id="tutorialTabs">
+                <!-- Tabs will be dynamically generated -->
+            </div>
+
+            <!-- Tutorial content area -->
+            <div class="tutorial-content" id="tutorialContent">
+                <!-- Content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+
+        <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Swick's IT Creations. All rights reserved.</p>
+            <p>🌱 Growing digital solutions, one project at a time</p>
+            <p style="margin-top: var(--spacing-sm);">
+                <a href="mailto:your.email@example.com" style="color: white; text-decoration: underline;">your.email@example.com</a> | 
+                <a href="tel:+15551234567" style="color: white; text-decoration: underline;">(555) 123-4567</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
