@@ -170,7 +170,7 @@
         
         /* Plant emoji adds personality without image load */
         .logo::before {
-            content: url('Logo with Minimalist Laptop and Wildflower Element.png');
+            content: "🌿";
             font-size: 1.8rem;
         }
         
