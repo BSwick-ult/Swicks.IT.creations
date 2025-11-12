@@ -95,8 +95,9 @@
         }
 
                 .logo::before {
-            content: "🌿";
+            content: url("Logo with Minimalist Laptop and Wildflower Element.png");
             font-size: 1.8rem;
+                        /* "🌿"  */
         }
 
         /* Social media links with animated backgrounds */
