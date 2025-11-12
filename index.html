@@ -8,6 +8,9 @@
     <meta name="keywords" content="freelance web developer, website creation, computer repair, HTML tutorials, CSS tutorials, C++ programming, SquareSpace help">
     <title>Green Code Solutions | Friendly Freelance Developer & Tech Support</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mys">
+    <script type="text/javascript" src="https://calendly.com/assets/external/calendly-squarespace.js"></script>
+
 
 </head>
 <body>
@@ -17,31 +20,59 @@
     <!-- Header with site-wide navigation -->
     <header role="banner">
         <nav role="navigation" aria-label="Main navigation">
-            <div class="logo">Swick's IT Creations</div>
+           <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+            <a href="index.html" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="webservices.html">webservices</a>
+                <a href="https://github.com/BSwick-ult" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <img src="LI-In-Bug.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+           
+            <!-- <div class="logo">Swick's IT Creations</div>
             <ul>
-                <li><a href="Index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="webservices.html" class="nav-link">Website Services</a></li>
                 <li><a href="techSupport.html" class="nav-link">Tech Support</a></li>
                 <li><a href="learningHub.html" class="nav-link">Learning Hub</a></li>
                 <li><a href="project.html" class="nav-link">Projects</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <!-- Social media links in header -->
+            </ul> -->
+            <!--Social media links in header -->
             <div class="social-links" aria-label="Social media links">
                 <a href="https://github.com/BSwick-ult" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
+                    <!-- <i class="fab fa-github"></i> -->
+                     <img src="github-mark-white.png" alt="GitHub Logo">
                 </a>
                 <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+                    <!-- <i class="fab fa-linkedin"></i> -->
+                     <img src="LI-In-Bug.png" alt="LinkedIn Logo">
                 </a>
                 <!-- <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                     <i class="fab fa-twitter"></i>
-                </a> -->
+                </a>  -->
                 <a href="mailto:b.swick0412@yahoo.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
+                    <!-- <i class="fas fa-envelope"></i> -->
+                     <img src="email-svgrepo-com.svg" alt="Email Icon">
                  </a>
-            </div>
+            </div> 
         </nav>
     </header>
     
@@ -58,7 +89,7 @@
             </div>
         </section>
         
-        <div class="linkedIn-section" id="linkedIn-title" hidden="true" aria-hidden="true">
+        <div class="linkedIn-section" id="linkedIn-title" aria-hidden="true">
             <h2 >Take a look into my life</h2>
         </div>
 
@@ -262,24 +293,12 @@
 
     <footer role="contentinfo">
         <div class="footer-content">
-            <p> 2025 Swick's IT Creations. </p>
+            <p>&copy; 2024 Swick's IT Creations. All rights reserved.</p>
             <p>🌱 Growing digital solutions, one project at a time</p>
             <p style="margin-top: var(--spacing-sm);">
-                <a href="mailto:your.email@example.com" style="color: white; text-decoration: underline;">DreamsToReality@SwicksITCreations.com</a> | 
-                <!-- <a href="tel:+15551234567" style="color: white; text-decoration: underline;">(555) 123-4567</a> -->
+                <a href="mailto:your.email@example.com" style="color: white; text-decoration: underline;">your.email@example.com</a> | 
+                <a href="tel:+15551234567" style="color: white; text-decoration: underline;">(555) 123-4567</a>
             </p>
-            <a href="https://github.com/BSwick-ult" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <!-- <i class="fab fa-github"></i> -->
-                    </a>
-                    <a href="https://linkedin.com/in/brittney-swick-167004b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <!-- <i class="fab fa-linkedin"></i> -->
-                    </a>
-                    <!-- <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a> -->
-                    <a href="mailto:DreamToReality@SwicksITCreation.com" aria-label="Email">
-                        <!-- <i class="fas fa-envelope"></i> -->
-                    </a>
         </div>
     </footer>
 
