@@ -76,7 +76,7 @@
             background: rgba(15, 30, 19, 0.95);
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
-            position: sticky;
+            position: fixed;
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 20px var(--shadow);
