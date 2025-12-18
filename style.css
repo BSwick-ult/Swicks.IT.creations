@@ -52,7 +52,7 @@
         }
         
         /* Header with navigation */
-        /* header {
+        header {
             background: linear-gradient(135deg, var(--primary-green), var(--light-green));
             color: white;
             padding: var(--spacing-sm) 0;
@@ -70,7 +70,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-        } */
+        }
 
         header {
             background: rgba(15, 30, 19, 0.95);
