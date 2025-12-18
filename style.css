@@ -95,8 +95,9 @@
         }
 
                 .logo::before {
-            content: "🌿";
+            content: url('Logo with Minimalist Laptop and Wildflower Element.png');
             font-size: 1.8rem;
+                        /* "🌿"  */
         }
 
         /* Social media links with animated backgrounds */
@@ -109,7 +110,7 @@
         .social-link {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
+            justify-content: end;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -169,7 +170,7 @@
         
         /* Plant emoji adds personality without image load */
         .logo::before {
-            content: "🌱";
+            content: url('Logo with Minimalist Laptop and Wildflower Element.png');
             font-size: 1.8rem;
         }
         
