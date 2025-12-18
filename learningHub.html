@@ -6,7 +6,7 @@
  <!-- SEO Meta Tags for search engine optimization -->
     <meta name="description" content="Comprehensive learning hub for Python, C++, HTML, CSS, Java, and Squarespace. Free tutorials, interactive lessons, and downloadable cheat sheets for web developers and programmers.">
     <meta name="keywords" content="python tutorial, c++ tutorial, html css tutorial, java programming, squarespace guide, programming cheat sheets, web development learning">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Brittney swick0412">
     
     <!-- Open Graph tags for social media sharing -->
     <meta property="og:title" content="Learning Hub - Master Programming & Web Development">
@@ -56,6 +56,7 @@
             <!-- Learning Hub Section (formerly How-To Guides) -->
         <section id="learning-hub" class="page-section ">
             <h1>Learning Hub 📚</h1>
+            <br> <br>
             <p>Knowledge grows best when it's shared! Here you'll find tutorials, guides, and resources to help you on your coding journey. I'm continuously adding new content, so check back often.</p>
             
             <div class="tutorial-grid">
@@ -110,7 +111,7 @@
         </section>
 
            <!-- Hero section -->
-        <section class="hero" aria-labelledby="hero-heading">
+        <section style="display: none;"class="hero" aria-labelledby="hero-heading">
             <div class="hero-icon" aria-hidden="true">📚</div>
             <h1 id="hero-heading">Learning Hub</h1>
             <p>Master programming and web development with interactive tutorials, comprehensive guides, and downloadable cheat sheets</p>
@@ -128,16 +129,17 @@
         </div>
 
         <!-- Programming languages section -->
-        <section aria-labelledby="languages-heading">
+        <section style="display: none;" aria-labelledby="languages-heading">
             <div class="section-header">
-                <h2 id="languages-heading">Programming Languages & Tools</h2>
+                <h2 id="languages-heading" style="text-align: center;">Programming Languages & Tools</h2>
+                <br>
                 <p>Choose a language to start your learning journey</p>
             </div>
 
             <div class="languages-grid" id="languagesGrid">
                 
                 <!-- Python Card -->
-                <article class="language-card" data-language="python">
+                <article style="display: none;" class="language-card" data-language="python">
                     <span class="language-icon" aria-hidden="true">🐍</span>
                     <h3>Python</h3>
                     <div style="text-align: center;">
@@ -155,7 +157,7 @@
                 </article>
 
                 <!-- CSS Card -->
-                <article class="language-card" data-language="css">
+                <article style="display: none;" class="language-card" data-language="css">
                     <span class="language-icon" aria-hidden="true">🎨</span>
                     <h3>CSS</h3>
                     <div style="text-align: center;">
@@ -173,7 +175,7 @@
                 </article>
 
                 <!-- Java Card -->
-                <article class="language-card" data-language="java">
+                <article style="display: none;" class="language-card" data-language="java">
                     <span class="language-icon" aria-hidden="true">☕</span>
                     <h3>Java</h3>
                     <div style="text-align: center;">
@@ -191,7 +193,7 @@
                 </article>
 
                 <!-- Squarespace Card -->
-                <article class="language-card" data-language="squarespace">
+                <article style="display: none;" class="language-card" data-language="squarespace">
                     <span class="language-icon" aria-hidden="true">🏗️</span>
                     <h3>Squarespace</h3>
                     <div style="text-align: center;">
@@ -211,13 +213,13 @@
         </section>
 
         <!-- Cheat Sheets Section -->
-        <section class="cheatsheets-section" id="cheatsheets" aria-labelledby="cheatsheets-heading">
+        <section style="display: none;" class="cheatsheets-section" id="cheatsheets" aria-labelledby="cheatsheets-heading">
             <div class="section-header">
                 <h2 id="cheatsheets-heading">Quick Reference Cheat Sheets</h2>
                 <p>Download comprehensive cheat sheets for quick reference while coding</p>
             </div>
 
-            <div class="cheatsheets-grid">
+            <div class="cheatsheets-grid" style="display: none;">
                 
                 <!-- Python Cheat Sheet -->
                 <article class="cheatsheet-card" id="cheatsheet-python">
@@ -294,7 +296,7 @@
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal()" aria-label="Close tutorial">×</button>
             
-            <div class="modal-header">
+            <div style="display: none;" class="modal-header">
                 <h2 id="modal-title">Tutorial Content</h2>
                 <p id="modal-subtitle" style="color: var(--light-gold);"></p>
             </div>

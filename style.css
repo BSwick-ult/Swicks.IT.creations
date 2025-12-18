@@ -53,26 +53,52 @@
         
         /* Header with navigation */
         header {
-            background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+            /* background: linear-gradient(135deg, var(--primary-green), var(--light-green));
             color: white;
             padding: var(--spacing-sm) 0;
             position: sticky;
             top: 0;
             z-index: 50;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+            margin: 0 auto !important;
+            overflow: hidden;
+            background-color: var(--primary-green);
+            padding: 20px 10px;
         }
+
         
         nav {
-            max-width: 1200px;
+            /* max-width: 1200px;
             margin: 0 auto;
             padding: 0 var(--spacing-md);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: wrap; */
+
+            float: left;
+            /* color: black; */
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
         }
 
-        header {
+        @media screen and (max-width: 500px) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .header-right {
+            float: none;
+        }
+        }
+
+        /* header {
             background: rgba(15, 30, 19, 0.95);
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
@@ -92,11 +118,12 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
-        }
+        } */
 
                 .logo::before {
             content: "🌿" ;
             font-size: 1.8rem;
+            justify-content: left;
                         /* "🌿"  */
         }
 
@@ -208,17 +235,23 @@
         /* Logo/Brand area with personality */
         .logo {
             font-family: var(--font-heading);
-            font-size: 1.5rem;
+            color: white;
+            font-size: 1.5rem; 
             font-weight: bold;
-            display: flex;
+             display: flex;
             align-items: center;
             gap: 0.5rem;
+            height: 15px;
+            width: auto;
+            object-fit: fit;  
         }
         
         /* Plant emoji adds personality without image load */
         .logo::before {
-            content: "🌿";
-            font-size: 1.8rem;
+            content: "🌿"; 
+            /* content: url(Logo\ with\ Minimalist\ Laptop\ and\ Wildflower\ Element.png); */
+             font-size: 1.5rem;
+            
         }
         
         /* Navigation menu - accessible and responsive */
@@ -778,15 +811,76 @@
 
         /*ABOUT PAGE CSS */
 
-        /* #about {
+          #about h1 {
+            text-align: center;
+        }
+        #about h2 {
             text-align: center;
         }
 
-        p#about  {
-            display: flex;
-            justify-content: center;
+         #about h3 {
+            text-align: center;
+        }
+
+
+        #about p {
+            /* display: flex;
+            justify-content: center; */
+            text-align: center !important;
+            margin: auto !important;
+            padding: 2em !important;
         }
 
         #about .features {
-            display: flex;
-        } */
+            display: inline-flex !important;
+            
+        }
+
+        #about .features li {
+            text-align: left !important;
+
+        } 
+
+        #websites h1 {
+            text-align: center !important;
+            margin: auto;
+        }
+
+        #websites p {
+            justify-content: center !important;
+            margin: auto;
+        }
+
+        .service-card h3 {
+            text-align: center !important;
+        }   
+
+        #tech-support h1 {
+            text-align: center !important;
+            margin: auto;
+        }
+        #tech-support p {
+            justify-content: center !important;
+            margin: auto;
+        }
+
+       #learning-hub h1 {
+            text-align: center !important;
+            margin: auto;
+        }
+        #learning-hub p {
+            justify-content: center !important;
+            margin: auto;
+        }
+
+        #hero-heading h1{
+            text-align: center !important;
+        }
+
+        #section-header {
+            text-align: center !important;
+        }
+        #projects p {
+            justify-content: center !important;
+            margin: auto;
+        }
